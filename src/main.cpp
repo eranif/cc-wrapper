@@ -203,7 +203,8 @@ int main(int argc, char** argv)
         // only write lines that are not meant for dependencies generation
         char cwd[1024];
         memset(cwd, 0, sizeof(cwd));
-        ::getcwd(cwd, sizeof(cwd));
+        auto curdir = getcwd(cwd, sizeof(cwd));
+        (void)curdir;
 
         for(size_t i = 0; i < file_names.size(); ++i) {
             std::string logfile = pdb;
