@@ -1,0 +1,3 @@
+[submodule "tinyjson"]
+	path = tinyjson
+	url = https://github.com/eranif/tinyjson
