@@ -23,6 +23,7 @@ This utility does the following:
 ```bash
 git clone https://github.com/eranif/cc-wrapper.git
 cd cc-wrapper
+git submodule update --init
 mkdir build-release
 cd $_
 cmake .. -DCMAKE_BUILD_TYPE=Release
